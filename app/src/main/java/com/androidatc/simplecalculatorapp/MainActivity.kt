@@ -18,6 +18,24 @@ class MainActivity : AppCompatActivity() {
             tv_result_view.text = sumResult.toString()
         }
 
+        btn_minus.setOnClickListener {
+            val sumResult = n1.toString().toDouble() -
+                    n2.toString().toDouble()
+            tv_result_view.text = sumResult.toString()
+        }
+
+        btn_multiply.setOnClickListener {
+            val sumResult = n1.toString().toDouble() *
+                    n2.toString().toDouble()
+            tv_result_view.text = sumResult.toString()
+        }
+
+        btn_divide.setOnClickListener {
+            val sumResult = n1.toString().toDouble() /
+                    n2.toString().toDouble()
+            tv_result_view.text = sumResult.toString()
+        }
+
 
     }
 }
